@@ -1,0 +1,110 @@
+:root {
+    --maxwidth-page: 1120px;
+    --maxwidth-content: 960px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/** remove this background later **/
+body {
+    background: mistyrose
+}
+
+header {
+    background: white;
+    margin: 0 auto;
+}
+
+.navigation-container {
+    margin: 0 auto;
+    max-width: var(--maxwidth-page);
+    padding: 16px;
+}
+
+.navigation-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-navigation,
+.right-navigation,
+.nav-item-left,
+.nav-item-right {
+    display: flex;
+}
+
+.nav-item-left,
+.nav-item-right {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+/** left navigation **/
+.left-navigation object {
+    height: 1.3rem;
+}
+
+.logo-container {
+    padding: 0 16px 0 16px;
+}
+
+.nav-item-container {
+    padding: 0 16px 0 16px;
+}
+
+.nav-item-left {
+    gap: 24px;
+}
+
+.nav-item-left li {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+/** right navigation **/
+.nav-item-right {
+    gap: 16px;
+}
+
+.set-container-item {
+    padding: 0 12px 0 12px;
+}
+
+.set-container-item.order-return {
+    width: 120px;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.item-container > object{
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.item-container > li {
+    text-align: center;
+}
+
+.nav-item-right li {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.800rem;
+    font-weight: 700;
+    line-height: 170%;
+}
+
